@@ -20,8 +20,8 @@ class settings : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_settings_activity)
-        val toolbar: Toolbar = findViewById(R.id.settings)
+        setContentView(R.layout.activity_setting)
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
