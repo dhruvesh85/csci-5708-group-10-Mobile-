@@ -70,21 +70,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/random" />
 
-            <Button
-                android:id="@+id/delete_my_account"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:background="@drawable/button_bg"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="Delete my profile"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/notifications" />
+    <Button
+        android:id="@+id/deleteProofleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Delete Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifications" />
 
     <TextView
         android:id="@+id/terms_and_conditions"
