@@ -33,8 +33,14 @@
     <string name="review">Review</string>
     <string name="bookname">Book Name</string>
     <string name="rate">Rate</string>
+    <string name="submit">SUBMIT</string>
     <string name="comment">Comments</string>
     <string name="emaileg">example@xyz.com</string>
+    <string name="useradd">Signup Successful</string>
+    <string name="error">Error:%1$s</string>
+    <string name="camera">Click From Camera</string>
+    <string name="gallery">Choose From Device</string>
+    <string name="back">Back</string>
 
 
 

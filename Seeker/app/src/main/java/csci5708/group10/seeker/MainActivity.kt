@@ -1,10 +1,9 @@
 package csci5708.group10.seeker
 
-import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -30,9 +29,24 @@ class MainActivity : AppCompatActivity() {
         navView.setOnNavigationItemSelectedListener{ item: MenuItem ->
             return@setOnNavigationItemSelectedListener when (item.itemId) {
                 R.id.navigation_profile -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container, ProfileFragment()).commit()
-                    true
+                   val sf=getSharedPreferences("loginpref",0)
+                    val str: String? = sf.getString("login", "")
+                    if(str.equals("1"))
+                    {
+                        supportFragmentManager.beginTransaction()
+                            .replace(R.id.fragment_container, ProfileFragment()).commit()
+                        true
+                    }
+//                    val ed=sf.edit()
+//                    ed.putString("login","0")
+//                    ed.commit()
+//                    ed.apply()
+                     else{
+                        val intent = Intent(this, login_act::class.java)
+                        startActivity(intent)
+                        true
+                    }
+
                 }
                 R.id.navigation_library -> {
                     supportFragmentManager.beginTransaction()

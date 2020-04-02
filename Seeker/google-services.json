@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "207665974234",
+    "firebase_url": "https://storyseeker-9c995.firebaseio.com",
+    "project_id": "storyseeker-9c995",
+    "storage_bucket": "storyseeker-9c995.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207665974234:android:6e9c4501fdf20fb6178ee3",
+        "android_client_info": {
+          "package_name": "com.example.storylogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207665974234-aed4lg09guh8m7mbdr4tfdeib6ieu5pm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.storylogin",
+            "certificate_hash": "260f516c861ff73e5035c1934853fce3faf173cc"
+          }
+        },
+        {
+          "client_id": "207665974234-2nnhjtbkvjqiuej0t5ntdmirhbvskge1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkF0DeJICMr8aIR5t69IyLpAodVCQ7Eng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207665974234-2nnhjtbkvjqiuej0t5ntdmirhbvskge1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

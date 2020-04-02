@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    tools:context=".login_act">
 
     <!--<View
         android:id="@+id/actionbar"
@@ -19,6 +19,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />-->
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="@+id/actionbar"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/actionbar"
+        app:layout_constraintTop_toTopOf="@+id/actionbar"
+        app:srcCompat="@drawable/back_arrow" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -41,12 +50,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/noto_sans"
+        android:fontFamily="@font/alegreya_sc_bold"
         android:text="@string/login"
         android:textAllCaps="false"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:fontFamily="@font/noto_sans"
+        app:fontFamily="@font/alegreya_sc_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -56,9 +65,9 @@
         android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/name"
+        android:hint="@string/email"
         android:inputType="textPersonName"
-        android:text="@string/name"
+        android:text="@string/email"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.252"
@@ -66,7 +75,8 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/userName"
+            android:id="@+id/uname"
+            android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -83,7 +93,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.562">
+        app:layout_constraintVertical_bias="0.562"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/icon_selector"
+        app:passwordToggleTint="@color/colorAccent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
@@ -103,7 +116,7 @@
         app:srcCompat="@drawable/key" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -125,7 +138,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.095" />
 
     <TextView
@@ -142,19 +155,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.095"
         tools:ignore="OnClick" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/forgot"
         android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:clickable="true"
         android:onClick=""
         android:text="@string/forgot_pass"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent"
