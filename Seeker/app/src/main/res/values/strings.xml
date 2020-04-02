@@ -16,6 +16,9 @@
     <string name="notifications">Notifications</string>
     <string name="random">Random Stories</string>
     <string name="qr">OR CODE</string>
+    <string name="addAStoryCover">Add a cover</string>
+    <string name="storyTitle">Story Title</string>
+    <string name="storyDescription">Story Description</string>
     <string name="buy_text">scan to avail offer!!</string>
     <string name="nearby">Near by Stores</string>
     <string name="address1">Halifax Public Libraries
