@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -44,10 +45,12 @@ class AddBookFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //saveButton=findViewById(R.id.backButton) as Button
-        //saveButton=view!!.findViewById(R.id.saveButton) as Button
+        val sf = activity?.getSharedPreferences("loginpref", 0)
+        val login: String? = sf?.getString("login", "")
+
+        if (login.equals("1")) {
             saveButton.setOnClickListener {
-                if(Build.VERSION.SDK_INT> Build.VERSION_CODES.M) {
+                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
                     if (ContextCompat.checkSelfPermission(
                             getActivity()!!.getApplicationContext(),
                             Manifest.permission.WRITE_EXTERNAL_STORAGE
@@ -60,14 +63,22 @@ class AddBookFragment : Fragment() {
                     } else {
                         savePdf()
                     }
-                }
-                else{
+                } else {
                     savePdf()
                 }
             }
+        }
+        else{
+            val toast = Toast.makeText(activity,"Please login first",Toast.LENGTH_SHORT)
+            toast.setGravity(Gravity.TOP, 0, 150)
+            toast.show()
+
+            val intent = Intent(activity, login_act::class.java)
+            startActivity(intent)
+        }
 
 
-        //return inflater.inflate(R.layout.fragment_add_book, container, false)
+
         }
 
         fun savePdf() {

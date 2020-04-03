@@ -24,6 +24,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".login_act" android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity android:name=".signup" android:windowSoftInputMode="adjustResize">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

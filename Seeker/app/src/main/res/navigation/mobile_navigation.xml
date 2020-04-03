@@ -31,11 +31,11 @@
         android:name="csci5708.group10.seeker.ProfileFragment"
         android:label="@string/Profile"
         tools:layout="@layout/fragment_profile" />
-    <fragment
-        android:id="@+id/fragment_signup"
-        android:name="csci5708.group10.seeker.SignUpFragment"
-        android:label="@string/signup"
-        tools:layout="@layout/fragment_signup" />
+<!--    <fragment-->
+<!--        android:id="@+id/fragment_signup"-->
+<!--        android:name="csci5708.group10.seeker.SignUpFragment"-->
+<!--        android:label="@string/signup"-->
+<!--        tools:layout="@layout/fragment_signup" />-->
 
 </navigation>
 

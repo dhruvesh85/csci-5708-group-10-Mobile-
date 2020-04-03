@@ -39,17 +39,27 @@ B3k 2Z1</string>
     <string name="login">Login</string>
     <string name="pass">Password</string>
     <string name="pass1">Password:</string>
-    <string name="name">User Name:</string>
-    <string name="f_name">First Name:</string>
-    <string name="l_name">Last Name:</string>
-    <string name="email">Email:</string>
-    <string name="con_pass">Confirm Password:</string>
+    <string name="name">User Name</string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="con_pass">Confirm Password</string>
     <string name="review">Review</string>
     <string name="bookname">Book Name</string>
     <string name="rate">Rate</string>
+    <string name="submit">SUBMIT</string>
+    <string name="logout">LOGOUT</string>
     <string name="comment">Comments</string>
     <string name="emaileg">example@xyz.com</string>
+    <string name="useradd">Signup Successful</string>
+    <string name="error">Error:%1$s</string>
+    <string name="camera">Click From Camera</string>
+    <string name="gallery">Choose From Device</string>
+    <string name="back">Back</string>
+    <string name="skip">Skip For Now >></string>
     <string name="storyTitle">Title</string>
+    <string name="title1">P.S be my angel</string>
+    <string name="descript">Story of a teenage lover</string>
     <string name="storyDescription">Description</string>
 
 

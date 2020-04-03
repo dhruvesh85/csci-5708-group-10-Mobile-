@@ -43,7 +43,16 @@ class SplashActivity : AppCompatActivity() {
             // This method will be executed once the timer is over
             // Start your app main activity
 
-            startActivity(Intent(this,MainActivity::class.java))
+            val sf=getSharedPreferences("loginpref",0)
+            val str: String? = sf.getString("login", "")
+            if(str.equals("1"))
+            {
+                startActivity(Intent(this,MainActivity::class.java))
+            }else
+            {
+                val intent = Intent(this, login_act::class.java)
+                startActivity(intent)
+            }
 
             // close this activity
             finish()
