@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/finderBook"
+        android:icon="@drawable/ic_location_searching_black_24dp"
+        android:title="Find nearest store"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/likeBook"
+        android:icon="@drawable/ic_action_favorites"
+        android:title="Like"
+        app:showAsAction="always" />
+</menu>

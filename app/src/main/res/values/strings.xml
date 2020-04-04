@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">StorySeeker</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home">Home</string>
+    <string name="Library">Library</string>
+    <string name="Add_Book">Add Book</string>
+    <string name="Settings">Settings</string>
+    <string name="Profile">Profile</string>
+    <string name="favorites">Favorites</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="teamName">Story Seeker</string>
+    <string name="darkMode">Dark Mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="random">Random Stories</string>
+    <string name="qr">QR CODE</string>
+    <string name="buy_text">scan to avail offer!!</string>
+    <string name="nearby">Near by Stores</string>
+    <string name="address1">Halifax Public Libraries
+Administration
+60 Alderney Drive
+Dartmouth, Nova Scotia
+B2Y 4P8</string>
+    <string name="address2">Halifax Public Libraries
+Administration
+60 Alderney Drive
+Halifax, Nova Scotia
+B3k 2Z1</string>
+
+    <string name="termsAndConditions">Terms and Conditions agreements act as a legal contract between
+        the company who has the website or mobile app and the user who access your website and mobile app.</string>
+
+    <!--login-->
+    <string name="signup1">Haven"'"t registered yet?</string>
+    <string name="signup">Signup</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="pass">Password</string>
+    <string name="pass1">Password:</string>
+    <string name="name">User Name</string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="con_pass">Confirm Password</string>
+    <string name="review">Review</string>
+    <string name="bookname">Book Name</string>
+    <string name="rate">Rate</string>
+    <string name="submit">SUBMIT</string>
+    <string name="logout">LOGOUT</string>
+    <string name="comment">Comments</string>
+    <string name="emaileg">example@xyz.com</string>
+    <string name="useradd">Signup Successful</string>
+    <string name="error">Error:%1$s</string>
+    <string name="camera">Click From Camera</string>
+    <string name="gallery">Choose From Device</string>
+    <string name="back">Back</string>
+    <string name="skip">Skip For Now >></string>
+    <string name="storyTitle">Title</string>
+    <string name="title1">P.S be my angel</string>
+    <string name="descript">Story of a teenage lover</string>
+    <string name="storyDescription">Description</string>
+
+
+</resources>
